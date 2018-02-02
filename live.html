@@ -4,17 +4,17 @@
 </head>
 <body>
 
-<div id="id_test_video" style="width:100%; height:auto;"></div>
-
-<script src="//imgcache.qq.com/open/qcloud/video/vcplayer/TcPlayer.js" charset="utf-8"></script>
-<script type="text/javascript">
-var player = new TcPlayer('id_test_video', {
-"m3u8": "http://2157.liveplay.myqcloud.com/2157_358535a.m3u8", //请替换成实际可用的播放地址
-"autoplay" : true,      //iOS下safari浏览器，以及大部分移动端浏览器是不开放视频自动播放这个能力的
-"coverpic" : "http://www.test.com/myimage.jpg",
-"width" :  '480',//视频的显示宽度，请尽量使用视频分辨率宽度
-"height" : '320'//视频的显示高度，请尽量使用视频分辨率高度
-});
-</script>
+<div id="id_video_container_10905947996254387291" style="width:100%;height:1px;"></div>
+<script src="//imgcache.qq.com/open/qcloud/video/live/h5/live_connect.js" charset="utf-8"></script>
+ <script type="text/javascript">
+            (function(){
+               var option ={"channel_id":"10905947996254387291","app_id":"1254896179","width":"1024","height":"768"};
+               new qcVideo.Player(
+                       /*代码中的id_video_container将会作为播放器放置的容器使用,可自行替换*/
+                       "id_video_container_10905947996254387291",
+                       option
+                   );
+             })()
+ </script>    
 </body>
 </html>
