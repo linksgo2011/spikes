@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>js验证码识别</title>
+</head>
+<script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
+<body>
+
+<script type="text/javascript">
+
+Tesseract.recognize("http://221.130.118.44:7001/systemmanage/verifycode/verifycode_create.action?ra=%270.1454525662922017%27", {
+    classify_bln_numeric_mode: 1
+}).then(function(result){
+   alert(result);
+});
+
+</script>
+</body>
+</html>
