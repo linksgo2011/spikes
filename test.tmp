@@ -1,0 +1,39 @@
+## 针对 http://eap.paas.cmbchina.cn/EAPbffwt/budgets?departmentId=13892&projectId=212&ticketId=202 的抓包记录
+
+### 请求 Request:
+
+GET /EAPbffwt/budgets?departmentId=13892&projectId=212&ticketId=202 HTTP/1.1
+Host: eap.paas.cmbchina.cn
+Accept-Encoding: gzip, deflate
+Cookie: __VCAP_ID__=e24cc4fc-7352-47fb-58e0-545c; JSESSIONID=D42FD06CA696B2BD5BFD901849812C97; USER_ACCESS_TOKEN=735ab682-c105-4dcf-a46a-a5533343d245; USER_COMPANY={%22id%22:135%2C%22name%22:%22%E4%BA%BA%E6%9C%89%E5%A4%9A%E5%A4%A7%E8%83%86%E5%9C%B0%E6%9C%89%E5%A4%9A%E5%A4%A7%E4%BA%A7%22}
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1
+Authorization: Bearer 735ab682-c105-4dcf-a46a-a5533343d245
+Referer: http://eap.paas.cmbchina.cn/EAPMobilewebQA
+Accept-Language: zh-cn
+
+
+
+### 请求 Response:
+
+HTTP/1.1 400 Bad Request
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Length: 58
+Content-Type: application/json;charset=UTF-8
+Date: Mon, 13 May 2019 10:03:16 GMT
+Expires: 0
+Pragma: no-cache
+Server: nginx
+Set-Cookie: __VCAP_ID__=10e2fb5c-74d5-42f7-7713-5e20; Path=/; HttpOnly
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Vcap-Request-Id: b7e4b2bc-9fae-4426-6edf-cdc72e419664
+X-Xss-Protection: 1; mode=block
+
+{"code":"","msg":"系统错误"}
+
+====
+该记录由 Stream 抓取，仅用于分析和学习。
